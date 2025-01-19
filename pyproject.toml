@@ -3,6 +3,7 @@ name = "product-ratings"
 version = "1.0.0"
 description = "products ratings project"
 authors = ["Anand anandu023380@gmail.com"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -13,8 +14,3 @@ pytest = "^6.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.packages]
-packages = [
-    { include = "product_ratings" }
-]
