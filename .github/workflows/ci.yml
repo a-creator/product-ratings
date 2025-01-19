@@ -1,0 +1,28 @@
+name: CI
+run-name: ${{ github.actor }} is running unit tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo "====== workflow started ======="
+    - run: echo "====== checkout code ======="
+    - uses: actions/checkout@v4
+    - run: echo "====== setup python 3 ======="
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - run: echo "====== installing poetry ======="
+    - name: Install Poetry
+      uses: abatilo/actions-poetry@v3
+    - run: echo "====== installing dependencies ======="
+    - name: Install dependencies
+      run: poetry install
+    - run: echo "====== Running unit tests ======="
+    - name: Run tests
+      run: poetry run python -m unittest discover
+    - run: echo "====== workflow completed ======="

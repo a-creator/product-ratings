@@ -1,0 +1,16 @@
+[project]
+name = "product-ratings"
+version = "1.0.0"
+description = "products ratings project"
+authors = [
+    {name = "Anand",email = "anandu023380@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
