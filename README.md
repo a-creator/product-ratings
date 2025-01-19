@@ -6,7 +6,7 @@ get the top rated products details for each month.
 
 ## Installation and dependencies details
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/a-creator/product-ratings.git`
 2. Install dependencies: `Python 3, SQLite (sqlite3), Poetry, unittest`
 
 ## Usage
